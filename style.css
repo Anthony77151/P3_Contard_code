@@ -10,6 +10,20 @@ header {
   text-align: center;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
   padding: 6px;
+  position: relative;
+}
+
+.city {
+  background-color: #f3f3f3;
+  padding: 8px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.city i {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
