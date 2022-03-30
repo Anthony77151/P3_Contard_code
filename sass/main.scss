@@ -1,4 +1,11 @@
 @import "./base/base.scss";
 @import "./layouts/header.scss";
-@import "./layouts/city.scss"
+@import "./layouts/city.scss";
 
+.explorer {
+    text-align: center;
+    h2 {
+        margin-top: 40px;
+        font-size: 30px;
+    }
+}
