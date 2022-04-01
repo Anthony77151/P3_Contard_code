@@ -5,6 +5,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+main {
+  padding: 0 20px;
+}
+
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
@@ -47,6 +51,14 @@ header {
 .explorer button:hover {
   transform: scale(1.02);
   opacity: 0.9;
+}
+
+.functioning ol {
+  display: flex;
+}
+.functioning li {
+  background-color: #f6f6f6;
+  padding: 16px 32px;
 }
 
 /*# sourceMappingURL=style.css.map */
