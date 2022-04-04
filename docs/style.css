@@ -74,7 +74,7 @@ header {
   gap: 32px;
   padding-left: 20px;
 }
-@media (max-width: 912px) {
+@media (max-width: 929px) {
   .functioning ol {
     flex-direction: column;
   }
@@ -116,6 +116,15 @@ header {
   margin-right: 16px;
   color: grey;
   font-size: 20px;
+}
+
+.restaurant {
+  background-color: #f6f6f6;
+  margin-top: 50px;
+  padding: 0 20px;
+}
+.restaurant h2 {
+  padding-top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
