@@ -60,7 +60,7 @@ header {
 }
 
 .functioning {
-  padding: 0 20px;
+  padding: 0 50px;
   margin-top: 40px;
   counter-reset: tutos;
 }
@@ -74,7 +74,7 @@ header {
   gap: 32px;
   padding-left: 20px;
 }
-@media (max-width: 929px) {
+@media (max-width: 999px) {
   .functioning ol {
     flex-direction: column;
   }
@@ -121,7 +121,7 @@ header {
 .restaurant {
   background-color: #f6f6f6;
   margin-top: 50px;
-  padding: 0 20px;
+  padding: 0 50px;
 }
 .restaurant h2 {
   padding-top: 50px;

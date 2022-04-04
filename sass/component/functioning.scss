@@ -1,7 +1,7 @@
 @use "../utils/box-shadow.scss";
 
 .functioning {
-    padding: 0 20px;
+    padding: 0 50px;
     margin-top: 40px;
     counter-reset: tutos;
     h2 {
@@ -13,7 +13,7 @@
         flex-wrap: wrap;
         gap: 32px;
         padding-left: 20px;
-        @media (max-width: 929px) {
+        @media (max-width: 999px) {
             flex-direction: column;
         }
     }
