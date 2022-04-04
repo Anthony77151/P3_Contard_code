@@ -29,10 +29,13 @@ header {
 
 .explorer {
   text-align: center;
+  background-color: #fdfdfd;
+  padding-bottom: 60px;
 }
 .explorer h2 {
-  margin-top: 40px;
+  padding-top: 40px;
   font-size: 30px;
+  margin-top: 0;
 }
 .explorer button {
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
@@ -42,6 +45,7 @@ header {
   border: 0;
   margin-top: 20px;
   font-size: 20px;
+  box-shadow: 2px 1px 8px -3px black;
   transition: transform 0.3s;
 }
 .explorer button:hover {
@@ -51,13 +55,24 @@ header {
 
 .functioning {
   padding: 0 20px;
+  margin-top: 60px;
 }
 .functioning ol {
   display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+@media (max-width: 800px) {
+  .functioning ol {
+    flex-direction: column;
+  }
 }
 .functioning li {
   background-color: #f6f6f6;
   padding: 16px 32px;
+  flex-grow: 1;
+  border-radius: 16px;
+  box-shadow: 2px 1px 8px -3px black;
 }
 
 /*# sourceMappingURL=style.css.map */
