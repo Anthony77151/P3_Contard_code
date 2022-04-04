@@ -30,7 +30,7 @@ header {
 .explorer {
   text-align: center;
   background-color: #fdfdfd;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 .explorer h2 {
   padding-top: 40px;
@@ -55,24 +55,52 @@ header {
 
 .functioning {
   padding: 0 20px;
-  margin-top: 60px;
+  margin-top: 40px;
+  counter-reset: tutos;
+}
+.functioning h2 {
+  padding-bottom: 20px;
 }
 .functioning ol {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 32px;
+  padding-left: 20px;
 }
-@media (max-width: 800px) {
+@media (max-width: 912px) {
   .functioning ol {
     flex-direction: column;
   }
 }
 .functioning li {
+  position: relative;
   background-color: #f6f6f6;
-  padding: 16px 32px;
+  padding: 24px 32px;
   flex-grow: 1;
   border-radius: 16px;
   box-shadow: 2px 1px 8px -3px black;
+}
+.functioning li::before {
+  content: counter(tutos);
+  counter-increment: tutos;
+  color: white;
+  background-color: #9356dc;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -15px;
+  top: 17px;
+}
+.functioning li:hover {
+  background-color: #f2eafb;
+}
+.functioning li i {
+  margin-right: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
