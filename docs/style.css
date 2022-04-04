@@ -3,10 +3,7 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-}
-
-main {
-  padding: 0 20px;
+  background-color: bisque;
 }
 
 header {
@@ -53,6 +50,9 @@ header {
   opacity: 0.9;
 }
 
+.functioning {
+  padding: 0 20px;
+}
 .functioning ol {
   display: flex;
 }
