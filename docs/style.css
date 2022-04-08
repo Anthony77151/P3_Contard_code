@@ -57,6 +57,7 @@ header {
 .explorer button:hover {
   transform: scale(1.02);
   opacity: 0.9;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.35);
 }
 
 .functioning {
@@ -148,6 +149,20 @@ header {
 .restaurant .restaurant_cards a {
   text-decoration: none;
 }
+.restaurant .restaurant_cards .new {
+  position: relative;
+}
+.restaurant .restaurant_cards .new::before {
+  content: "Nouveau";
+  position: absolute;
+  background-color: #99E2D0;
+  color: #1b6150;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  top: 16px;
+  right: 16px;
+}
 .restaurant .restaurant_card {
   flex-direction: column;
   height: 250px;
@@ -157,6 +172,8 @@ header {
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   color: black;
+  position: relative;
+  transition: transform 0.3s;
 }
 @media (min-width: 768px) {
   .restaurant .restaurant_card {
@@ -181,6 +198,27 @@ header {
 }
 .restaurant .restaurant_card span {
   margin: 0 0 10px 10px;
+}
+.restaurant .restaurant_card .fa-heart {
+  position: absolute;
+  font-size: 24px;
+  right: 16px;
+  top: 85%;
+  transform: translateY(-85%);
+}
+.restaurant .restaurant_card .fas {
+  color: transparent;
+  background-image: linear-gradient(to top, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  opacity: 0;
+  transition: 0.6s;
+}
+.restaurant .restaurant_card .fas:hover {
+  opacity: 1;
+}
+.restaurant .restaurant_card:hover {
+  transform: scale(1.03);
 }
 
 footer {
