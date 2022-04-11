@@ -5,7 +5,8 @@
 @use "./layouts/functioning.scss";
 @use "./layouts/restaurant.scss";
 @use "./layouts/footer.scss";
+@use "./utils/animations.scss";
 
 // pages
 
-@use "./pages/la-palette.scss";
+@use "./pages/menus.scss";

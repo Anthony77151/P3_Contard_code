@@ -5,5 +5,13 @@
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
+    ::-moz-selection{
+        background-color : #9356dc;
+        color : #fff;
+      }
+      ::selection{
+        background-color : #9356dc;
+        color : #fff;
+      }
 }
 
