@@ -2,6 +2,10 @@
 @use "./layouts/header.scss";
 @use "./layouts/city.scss";
 @use "./layouts/explorer.scss";
-@use "./component/functioning.scss";
+@use "./layouts/functioning.scss";
 @use "./layouts/restaurant.scss";
 @use "./layouts/footer.scss";
+
+// pages
+
+@use "./pages/la-palette.scss";
