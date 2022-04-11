@@ -1,0 +1,31 @@
+@use "../utils/mixins.scss";
+
+header .fa-arrow-left {
+    font-size: 25px;
+    position: absolute;
+    color: black;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner img {
+    @include mixins.image-menu-restaurant;
+}
+
+.menu-restaurant {
+    padding: 50px 20px;
+    position: relative;
+    background-color: aqua;
+    h2 {
+    font-family: "Shrikhand", cursive;
+    }
+    .fa-heart {
+        position: absolute;
+        font-size: 32px;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%)
+    }
+    @include mixins.heart; 
+}

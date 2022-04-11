@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhMyFood</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/docs/images/logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,7 +20,7 @@
         <section class="explorer">
             <h2>Réservez le menu qui <br>vous convient</h2>
             <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <button>Explorer nos restaurants</button>
+            <a href="#restaurants"><button>Explorer nos restaurants</button></a>
         </section>
         <section class="functioning">
             <h2>Fonctionnement</h2>
@@ -29,10 +30,10 @@
                 <li><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
             </ol>
         </section>
-        <section class="restaurant">
+        <section id="restaurants" class="restaurant">
             <h2>Restaurants</h2>
             <div class="restaurant_cards">
-                <a href="#" class="restaurant_card new">
+                <a href="./pages/la-palette.html" class="restaurant_card new">
                     <img src="./images/la-palette-du-gout.jpg" alt="" title="La palette du goût">
                     <h3>La palette du goût</h3>
                     <span>Ménilmontant</span>
@@ -68,7 +69,7 @@
         <a href="#"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a>
         <a href="#"><i class="fa-solid fa-handshake-angle"></i> Devenir Partenaire</a>
         <a href="#">Mentions légales</a>
-        <a href="#">Contact</a>
+        <a href="mailto::noreply@1formatik.com?subject=Titre&body=Exemple">Contact</a>
     </footer>
     <script src="https://kit.fontawesome.com/8703a29678.js" crossorigin="anonymous"></script>
 </body>

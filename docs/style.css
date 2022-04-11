@@ -58,6 +58,7 @@ header {
   transform: scale(1.02);
   opacity: 0.9;
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
 }
 
 .functioning {
@@ -199,13 +200,6 @@ header {
 .restaurant .restaurant_card span {
   margin: 0 0 10px 10px;
 }
-.restaurant .restaurant_card .fa-heart {
-  position: absolute;
-  font-size: 24px;
-  right: 16px;
-  top: 85%;
-  transform: translateY(-85%);
-}
 .restaurant .restaurant_card .fas {
   color: transparent;
   background-image: linear-gradient(to top, #ff79da, #9356dc);
@@ -216,6 +210,13 @@ header {
 }
 .restaurant .restaurant_card .fas:hover {
   opacity: 1;
+}
+.restaurant .restaurant_card .fa-heart {
+  position: absolute;
+  font-size: 24px;
+  right: 16px;
+  top: 85%;
+  transform: translateY(-85%);
 }
 .restaurant .restaurant_card:hover {
   transform: scale(1.03);
@@ -260,6 +261,53 @@ footer .logo {
   footer a .fa-utensils {
     margin-right: 6px;
   }
+}
+
+header .fa-arrow-left {
+  font-size: 25px;
+  position: absolute;
+  color: black;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.banner img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+@media (min-width: 992px) {
+  .banner img {
+    height: 50vh;
+  }
+}
+
+.menu-restaurant {
+  padding: 50px 20px;
+  position: relative;
+  background-color: aqua;
+}
+.menu-restaurant h2 {
+  font-family: "Shrikhand", cursive;
+}
+.menu-restaurant .fa-heart {
+  position: absolute;
+  font-size: 32px;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu-restaurant .fas {
+  color: transparent;
+  background-image: linear-gradient(to top, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  opacity: 0;
+  transition: 0.6s;
+}
+.menu-restaurant .fas:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
