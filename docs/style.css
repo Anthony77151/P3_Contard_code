@@ -285,13 +285,16 @@ header .fa-arrow-left {
 }
 
 .menu-restaurant {
-  padding: 10px 20px;
+  background-color: #f6f6f6;
+}
+.menu-restaurant .menu-restaurant_title {
   position: relative;
+  padding: 10px 20px;
   background-color: #f6f6f6;
   border-radius: 25px 25px 0 0;
   margin-top: -25px;
 }
-.menu-restaurant h2 {
+.menu-restaurant .menu-restaurant_title h2 {
   font-family: "Shrikhand", cursive;
 }
 .menu-restaurant .fa-heart {
@@ -311,6 +314,15 @@ header .fa-arrow-left {
 }
 .menu-restaurant .fas:hover {
   opacity: 1;
+}
+.menu-restaurant_list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.menu-restaurant_list .menu_category {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -14,13 +14,16 @@ header .fa-arrow-left {
 }
 
 .menu-restaurant {
-    padding: 10px 20px;
-    position: relative;
     background-color: #f6f6f6;
-    border-radius: 25px 25px 0 0;
-    margin-top: -25px;
-    h2 {
-    font-family: "Shrikhand", cursive;
+    .menu-restaurant_title {
+        position: relative;
+        padding: 10px 20px;
+        background-color: #f6f6f6;
+        border-radius: 25px 25px 0 0;
+        margin-top: -25px;
+        h2 {
+        font-family: "Shrikhand", cursive;
+        }
     }
     .fa-heart {
         position: absolute;
@@ -30,4 +33,13 @@ header .fa-arrow-left {
         transform: translateY(-50%)
     }
     @include mixins.heart; 
+    &_list {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        .menu_category {
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
