@@ -19,12 +19,18 @@ header .fa-arrow-left {
 
 .menu-restaurant {
     background-color: #f6f6f6;
+    border-radius: 25px 25px 0 0;
+    margin-top: -25px;
+    padding: 10px 20px;
+    z-index: 2;
+    position: relative;
+    @media (min-width : 992px) {
+        width: 80%;
+        margin: -50px auto 100px auto;
+        box-shadow: 0px 0px 25px -6px rgb(112 112 112);
+    }
     .menu-restaurant_title {
         position: relative;
-        padding: 10px 20px;
-        background-color: #f6f6f6;
-        border-radius: 25px 25px 0 0;
-        margin-top: -25px;
         h2 {
         font-family: "Shrikhand", cursive;
         }
