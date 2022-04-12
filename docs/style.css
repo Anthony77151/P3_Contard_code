@@ -45,7 +45,7 @@ header {
 }
 .explorer h2 {
   padding-top: 40px;
-  font-size: 30px;
+  font-size: 26px;
   margin-top: 0;
 }
 .explorer p {
@@ -71,7 +71,7 @@ header {
 
 .functioning {
   padding: 0 50px;
-  margin-top: 40px;
+  margin-top: 30px;
   counter-reset: tutos;
 }
 .functioning h2 {
@@ -88,6 +88,7 @@ header {
   .functioning ol {
     flex-direction: row;
     flex-wrap: wrap;
+    text-align: center;
   }
 }
 .functioning li {
@@ -98,7 +99,7 @@ header {
   flex-grow: 1;
   border-radius: 16px;
   box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s;
+  transition: all 0.3s;
 }
 .functioning li::before {
   content: counter(tutos);
@@ -165,6 +166,7 @@ header {
   content: "Nouveau";
   position: absolute;
   background-color: #99E2D0;
+  opacity: 0.9;
   color: #1b6150;
   font-weight: bold;
   padding: 8px 16px;
@@ -295,13 +297,21 @@ header .fa-arrow-left {
 
 .menu-restaurant {
   background-color: #f6f6f6;
+  border-radius: 25px 25px 0 0;
+  margin-top: -25px;
+  padding: 10px 20px;
+  z-index: 2;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .menu-restaurant {
+    width: 80%;
+    margin: -50px auto 100px auto;
+    box-shadow: 0px 0px 25px -6px #707070;
+  }
 }
 .menu-restaurant .menu-restaurant_title {
   position: relative;
-  padding: 10px 20px;
-  background-color: #f6f6f6;
-  border-radius: 25px 25px 0 0;
-  margin-top: -25px;
 }
 .menu-restaurant .menu-restaurant_title h2 {
   font-family: "Shrikhand", cursive;
