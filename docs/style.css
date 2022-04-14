@@ -317,6 +317,7 @@ header .fa-arrow-left {
 }
 .menu-restaurant .menu-restaurant_title h2 {
   font-family: "Shrikhand", cursive;
+  margin-left: 20px;
 }
 .menu-restaurant .menu_restaurant_icon {
   position: absolute;
@@ -329,6 +330,35 @@ header .fa-arrow-left {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.menu-restaurant_list .appear-delay-1 {
+  animation: 1.5s appear;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  animation-delay: 0.2s;
+}
+.menu-restaurant_list .appear-delay-2 {
+  animation: 1.5s appear;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  animation-delay: 0.4s;
+}
+.menu-restaurant_list .appear-delay-3 {
+  animation: 1.5s appear;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  animation-delay: 0.6s;
 }
 .menu-restaurant_list ul {
   list-style-type: none;
