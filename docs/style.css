@@ -330,55 +330,71 @@ header .fa-arrow-left {
   flex-direction: column;
   padding: 0 20px;
 }
-.menu-restaurant_list .menu_category {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
+.menu-restaurant_list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+.menu-restaurant_list ul li {
   height: 70px;
-  border-radius: 15px;
-  overflow: hidden;
-  margin-bottom: 15px;
+  border-radius: 1rem;
   box-shadow: 0 5px 15px #00000033;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
   cursor: pointer;
 }
-.menu-restaurant_list .menu_category h3 {
-  margin: 10px 0 5px 20px;
+.menu-restaurant_list ul li .menu_category {
+  padding: 10px 15px;
+  max-width: 100%;
+  min-width: 0;
+  flex: 1;
 }
-.menu-restaurant_list .menu_category_info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.menu-restaurant_list ul li .menu_category h2 {
+  font-size: 18px;
+  margin: 0;
   overflow: hidden;
-  margin-left: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-.menu-restaurant_list .menu_category_info span {
-  font-weight: bold;
-  margin-right: 20px;
-  transition: margin-right 1s;
-}
-.menu-restaurant_list .menu_category .box-animation {
+.menu-restaurant_list ul li .menu_category div {
   display: flex;
-  position: absolute;
-  background-color: #99e2d0;
+  justify-content: space-between;
+}
+.menu-restaurant_list ul li .menu_category div p {
+  font-size: 17px;
+  max-width: calc(100% - 40px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: 1;
+  margin: 5px 0 0 0;
+}
+.menu-restaurant_list ul li .menu_category div span {
+  width: 40px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.menu-restaurant_list ul li .box-animation {
+  width: 0;
+  position: relative;
+  background: #99e2d0;
   height: 100%;
-  width: 0px;
-  right: 0;
   transition: width 1s;
 }
-.menu-restaurant_list .menu_category .box-animation .check-animation {
+.menu-restaurant_list ul li .box-animation .check-animation {
   margin: auto;
+  position: absolute;
+  left: 33%;
+  top: 30%;
   color: #fff;
   font-size: 26px;
   transition: transform 1s;
 }
-.menu-restaurant_list .menu_category:hover .box-animation {
-  width: 70px;
+.menu-restaurant_list ul li:hover .box-animation {
+  width: 80px;
 }
-.menu-restaurant_list .menu_category:hover .menu_category_info span {
-  margin-right: 90px;
-}
-.menu-restaurant_list .menu_category:hover .check-animation {
+.menu-restaurant_list ul li:hover .check-animation {
   transform: rotate(360deg);
 }
 .menu-restaurant_list p {

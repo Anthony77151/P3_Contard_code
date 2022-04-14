@@ -1,12 +1,14 @@
 @use "../utils/box-shadow.scss";
 
-header .fa-arrow-left {
+header {
+    .fa-arrow-left {
     font-size: 25px;
     position: absolute;
     color: black;
     left: 40px;
     top: 50%;
     transform: translateY(-50%);
+}
 }
 
 .banner img {
@@ -51,62 +53,75 @@ header .fa-arrow-left {
         display: flex;
         flex-direction: column;
         padding: 0 20px;
-        .menu_category {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            background-color: #fff;
+        ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 10px 0;
+        li{
             height: 70px;
-            border-radius: 15px;
-            overflow: hidden;
-            margin-bottom: 15px;
+            border-radius: 1rem;
             box-shadow: 0 5px 15px #00000033;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
             cursor: pointer;
-            h3 {
-                margin: 10px 0 5px 20px;
-            }
-            &_info {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                overflow: hidden;
-                margin-left: 20px;
-                span {
-                    font-weight: bold;
-                    margin-right: 20px;
-                    transition: margin-right 1s;
+            .menu_category {
+                padding: 10px 15px;
+                max-width: 100%;
+                min-width: 0;
+                flex: 1;
+                h2 {
+                    font-size: 18px;
+                    margin: 0;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    p {
+                        font-size: 17px;
+                        max-width: calc(100% - 40px);
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        flex: 1;
+                        margin: 5px 0 0 0;
+                    }
+                    span {
+                        width: 40px;
+                        font-weight: bold;
+                        margin-top: 5px;
+                    }
                 }
             }
-            .box-animation {
-                display: flex;
-                position: absolute;
-                background-color: #99e2d0;
+            .box-animation{
+                width: 0;
+                position: relative;
+                background: #99e2d0;
                 height: 100%;
-                width: 0px;
-                right: 0;
                 transition: width 1s;
                 .check-animation {
                     margin: auto;
+                    position: absolute;
+                    left: 33%;
+                    top: 30%;
                     color: #fff;
                     font-size: 26px;
                     transition: transform 1s;
                 }
-                
             }
             &:hover {
                 .box-animation {
-                    width: 70px;
-                }
-                .menu_category_info {
-                    span {
-                        margin-right: 90px;
-                    }
+                    width: 80px;
                 }
                 .check-animation {
                     transform: rotate(360deg);
                 }
             }
         }
+    }
         p {
             margin: 0;
         }
@@ -138,3 +153,4 @@ header .fa-arrow-left {
         }
     }
 }
+
