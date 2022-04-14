@@ -1,4 +1,5 @@
 @use "../utils/box-shadow.scss";
+@use "../utils/mixins.scss";
 
 header {
     .fa-arrow-left {
@@ -40,6 +41,7 @@ header {
         position: relative;
         h2 {
         font-family: "Shrikhand", cursive;
+        margin-left: 20px;
         }
     }
     .menu_restaurant_icon {
@@ -53,6 +55,23 @@ header {
         display: flex;
         flex-direction: column;
         padding: 0 20px;
+        @keyframes appear {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @for $i from 1 through 3 {
+            .appear-delay-#{$i} {
+                @include mixins.appear-animation;
+                animation-delay: $i*0.2s;
+            }
+        }
         ul {
         list-style-type: none;
         padding: 0;
@@ -153,4 +172,5 @@ header {
         }
     }
 }
+
 

@@ -1,0 +1,5 @@
+@mixin appear-animation {
+    animation: 1.5s appear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
