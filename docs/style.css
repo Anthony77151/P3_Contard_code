@@ -3,6 +3,7 @@
 .loader {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   position: fixed;
   width: 100%;
@@ -10,18 +11,9 @@
   top: 0;
   bottom: 0;
   z-index: 4;
-  background-color: #FF79DA;
+  background-color: #f6f6f6;
   animation: fondu 1.5s forwards;
   animation-delay: 3s;
-}
-@keyframes fondu {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
 }
 .loader .title-loader {
   text-align: center;
@@ -30,11 +22,43 @@
   font-family: FontAwesome;
   animation: load 1.3s infinite 0s ease-in-out;
   animation-direction: alternate;
-  text-shadow: 0 0 1px white;
 }
 @media (min-width: 768px) {
   .loader .title-loader {
     font-size: 30px;
+  }
+}
+.loader span {
+  border-radius: 5px;
+  margin: 4px 0 5px 0;
+  animation-name: load, move;
+  animation-duration: 1.3s, 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+.loader .span_top {
+  width: 40px;
+  border-bottom: #9356dc 10px solid;
+  animation-delay: 0.2s;
+}
+.loader .span_mid {
+  width: 50px;
+  border-bottom: #FF79DA 10px solid;
+}
+.loader .span_bot {
+  width: 35px;
+  border-bottom: #99E2D0 10px solid;
+  animation-delay: 0.2s;
+}
+
+@keyframes fondu {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 @keyframes load {
@@ -47,7 +71,17 @@
     opacity: 1;
   }
 }
-
+@keyframes move {
+  0% {
+    transform: translateX(60px);
+  }
+  50% {
+    transform: translateX(-60px);
+  }
+  100% {
+    transform: translateX(60px);
+  }
+}
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
