@@ -132,25 +132,24 @@ header {
 }
 .explorer p {
   color: #5f5f5f;
+  margin-bottom: 50px;
 }
-.explorer button {
+.explorer a {
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   padding: 20px 30px;
   border-radius: 30px;
   border: 0;
+  text-decoration: none;
+  color: white;
   margin-top: 20px;
   font-size: 20px;
   box-shadow: 2px 1px 8px -3px black;
   transition: transform 0.3s;
 }
-.explorer button:hover {
+.explorer a:hover {
   transform: scale(1.02);
   opacity: 0.9;
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.35);
-}
-.explorer button a {
-  text-decoration: none;
-  color: white;
 }
 
 .functioning {
