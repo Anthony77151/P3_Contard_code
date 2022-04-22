@@ -11,12 +11,15 @@
     }
     p {
         color: rgb(95, 95, 95);
+        margin-bottom: 50px;
     }
-    button {
+    a {
         background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
         padding: 20px 30px;
         border-radius: 30px;
         border: 0;
+        text-decoration: none;
+        color: white;
         margin-top: 20px;
         font-size: 20px;
         @include box-shadow.shadow;
@@ -25,10 +28,6 @@
             transform: scale(1.02);
             opacity: 0.9;
             box-shadow: 0px 8px 20px 0px rgb(0 0 0 / 35%);
-        }
-        a {
-            text-decoration: none;
-            color: white;
         }
     }
 }
